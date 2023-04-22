@@ -52,3 +52,7 @@ UPDATE address_book SET name='Professional Address Book', type = 'Professional' 
 SELECT * FROM address_book /* retrive data */
 
 SELECT type, COUNT(*) AS count FROM address_book GROUP BY type  /* count person by type */
+
+/* insert 1 values as type friend and 1 as family */
+INSERT INTO address_book VALUES('Aditya','Amle','Sector-2','Durg','CG','000043','912345672','aditya@gmail.com','Family Address Book','Family'),
+							   ('Shreya','Soni','Maroda','Risali','CG','002003','998765433','soni@gmail.com','Friends Address Book','Friends')
