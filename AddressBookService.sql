@@ -49,3 +49,6 @@ UPDATE address_book SET name='Friends Address Book', type = 'Friends' WHERE id =
 UPDATE address_book SET name='Friends Address Book', type = 'Friends' WHERE id = 3
 UPDATE address_book SET name='Professional Address Book', type = 'Professional' WHERE id = 5
 
+SELECT * FROM address_book /* retrive data */
+
+SELECT type, COUNT(*) AS count FROM address_book GROUP BY type  /* count person by type */
